@@ -2,6 +2,7 @@
 
 
 function boasVindas() {
+    event.target.disabled = true;
     const nomeValue = document.querySelector("#nome").value;
     const conversa = document.querySelector("#conversa");
     conversa.innerHTML += `<h3>Seja bem vindo(a) ${nomeValue}</h3>`;
@@ -37,6 +38,6 @@ function precisoDeSuporte() {
             <br>
             <button>Falar com atendente</button>
             <br>
-        `
+        `;
     }, 1000);
 }

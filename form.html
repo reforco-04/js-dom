@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss"></style>
+</head>
+
+<body class="bg-pink-600
+">
+    <h2>Digite seu nome</h2>
+    <input type="text" placeholder="Digite seu nome" onkeyup="boasVindas(event.target.value)">
+    <h2 id="mensagem"></h2>
+
+    <h2>Escolha uma fruta</h2>
+    <select onchange="escolherFruta(event.target.value)">
+        <option>Maçã</option>
+        <option>Mamão</option>
+        <option>Melão</option>
+    </select>
+    <h2 id="resposta"></h2>
+
+    <form id="cadastro" onsubmit="cadastrar()">
+        <label for="nome">Nome</label><br>
+        <input type="text" name="nome" id="nome"><br>
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email"><br>
+        <label for="senha">Senha</label><br>
+        <input type="text" name="senha" id="senha"><br>
+        <button>Entrar</button>
+    </form>
+
+    <button onclick="inserirDiv()">Criar divs</button>
+    <div id="divs"></div>
+    
+    
+    <button onclick="mostrarAlerta('Primeiro alerta')">chama o alerta 1ª vez</button>
+    <br>
+    <button onclick="mostrarAlerta('Segundo alerta')">chama o alerta 2ª vez</button>
+    
+    <div id="alerta" class="fixed bottom-10 right-10 p-4 rounded shadow-md bg-white duration-200 opacity-0 invisible"></div>
+
+
+    <script src="form.js"></script>
+</bodycla>
+
+</html>
